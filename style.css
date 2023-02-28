@@ -1,0 +1,19 @@
+@import url(css/topbar.css);
+
+body {
+  color: #fff;
+  font-family: 'Open Sans', sans-serif;
+}
+
+:root {
+  --branco: #FFFFFF;
+  --azul-bg: #131E54;
+  --laranja-bg: #F76708;
+  --cinza-bg: #545454;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
