@@ -1,5 +1,6 @@
 @import url(css/topbar.css);
 @import url(css/chamada.css);
+@import url(css/service.css);
 
 body {
   font-family: 'Open Sans', sans-serif;
@@ -9,8 +10,8 @@ body {
   --branco: #FFFFFF;
   --azul-bg: #131E54;
   --azul-bg2: #1F3289;
-  --laranja-bg: #F76708;
-  --cinza-bg: #545454;
+  --laranja: #F76708;
+  --cinza-bg: #f2f2f2;
 }
 
 * {

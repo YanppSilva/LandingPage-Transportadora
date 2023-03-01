@@ -13,7 +13,7 @@
   font-size: 1em;
   font-weight: 600;
   line-height: 19px;
-  background-color: var(--laranja-bg);
+  background-color: var(--laranja);
   border-radius: 8px;
   border: none;
   padding: 5px 15px;
@@ -58,7 +58,6 @@ ion-icon {
   justify-content:space-around;
   align-items: center;
   height: 8vh;
-  width: 100vw;
 }
 
 .nav__list {
@@ -87,6 +86,7 @@ a:hover {
   cursor: pointer;
   background-color: rgba(255,101,3, 0.9);
   border-radius: 3px;
+  height: 40px;
 }
 
 .mobile__menu div {
