@@ -8,6 +8,7 @@ body {
 :root {
   --branco: #FFFFFF;
   --azul-bg: #131E54;
+  --azul-bg2: #1F3289;
   --laranja-bg: #F76708;
   --cinza-bg: #545454;
 }
@@ -15,5 +16,6 @@ body {
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
