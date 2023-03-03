@@ -1,78 +1,438 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Yan Pablo</title>
+
+  <link rel="stylesheet" href="css/reset.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&display=swap"
-    rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css"
+    integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
   <link rel="stylesheet" href="style.css">
-  <link rel="shortcut icon" href="assets/logoSemFundo.png" type="image/x-icon">
-  <title>RV Cargas</title>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&family=Open+Sans:wght@300;400;700&display=swap"
+    rel="stylesheet">
+
+
 </head>
 
 <body>
-  <header class="topbar">
-    <nav class="topbar__navbar">
-      <img src="assets/logo-horizontal.png" alt="Logo RV Cargas">
-      <ul class="nav__list">
-        <li><a href="#">Sobre</a></li>
-        <li><a href="#">Contato</a></li>
-        <li><a href="#">Rastreamento</a></li>
-      </ul>
-      <section class="topbar__top">
-        <button class="topbar__btn"><a href="https://whats.link/rvcargaslog" class="topbar__btn-link" target="_blank"><ion-icon name="logo-whatsapp"></ion-icon>Faça sua cotação</a></button>
-      </section>
-      <div class="mobile__menu">
-        <div class="line1"></div>
-        <div class="line2"></div>
-        <div class="line3"></div>
-      </div>
-    </nav>
+  <header class="cabecalho container">
+    <div class="content">
+      <div class="text" data-text="Yan Pablo">Yan Pablo</div>
     </div>
+    <nav class="cabecalho__navegacao">
+      <ul class="cabecalho__lista">
+        <li class="cabecalho__link"><a href="#sobre">
+            < Sobre />
+          </a></li>
+        <li class="cabecalho__link"><a href="#skills">
+            < Skill's />
+          </a></li>
+        <li class="cabecalho__link"><a href="#projetos">
+            < Projetos />
+          </a></li>
+      </ul>
+    </nav>
   </header>
-  <main>
-    <section class="chamada__container">
-      <div class="chamada__bloco1">
-        <h2 class="chamada__titulo">Transportando com eficiência e agilidade para todo o Brasil!</h2>
-        <button class="chamada__btn"><a href="https://www.instagram.com/rvcargaslogistica/" target="_blank">veja mais</a></button>
-      </div>
-    </section>
-    <section class="servicos__container">
-      <h3 class="servicos__titulo">por que escolher a rv cargas</h3>
-      <div class="servicos__bloco1">
-        <div class="servicos__cards">
-          <div class="servicos__card">
-            <img src="assets/icons/logistics128.png" alt="Icone de serviços internacionais" class="servicos__icones">
-            <span class="servicos__card-text">Serviços de Logística nacional e internacional</span>
+  <section class="chamada container" id="topo">
+    <div class="chamada__container">
+      <h2 class="chamada__titulo">Hello World,<br><b class="titulo__negrito">I'm a Frontend Developer</b></h2>
+      <p class="chamada__texto">Desenvolvedor Front-end, apaixonado por tecnologia e desenvolvimento web.</p>
+      <a class="chamada__botao botao" href="#">Confira minhas skills!</a>
+    </div>
+  </section>
+  <section class="sobre-mim" id="sobre">
+    <div class="container__sobre-mim">
+      <div class="container_card">
+        <div class="card">
+          <div class="card__clickbait">Passe o mouse</div>
+          <div class="imgBx">
+            <img src="img/yan pablo.png" alt="foto de Yan Pablo">
           </div>
-        </div>
-        <div class="servicos__cards">
-          <div class="servicos__card">
-            <img src="assets/icons/logistics-delivery128.png" alt="Icone de serviços de logística aéreos e rodoviários" class="servicos__icones">
-            <span class="servicos__card-text">transporte Aéreo e Rodoviário para todo o Brasil</span>
-          </div>
-        </div>
-        <div class="servicos__cards">
-          <div class="servicos__card">
-            <img src="assets/icons/box128.png" alt="Icone de operações dedicadas" class="servicos__icones">
-            <span class="servicos__card-text">Operações dedicadas</span>
-          </div>
-        </div>
-        <div class="servicos__cards">
-          <div class="servicos__card">
-            <img src="assets/icons/inventory128.png" alt="Icone de serviços internacionais" class="servicos__icones">
-            <span class="servicos__card-text">Serviços de Armazenamento de Cargas</span>
+          <div class="content">
+            <div class="detail">
+              <h2>Yan Pablo<br><span>Desenvolvedor Front-end</span></h2>
+              <ul class="social-icons">
+                <li><a href="https://www.linkedin.com/in/yanpablo/" target="_blank"><i class="fa fa-linkedin"
+                      aria-hidden="true"></i>
+                  </a></li>
+                <li><a href="https://www.instagram.com/yan.ppsilva/" target="_blank"><i class="fa fa-instagram"
+                      aria-hidden="true"></i></a></li>
+                <li><a href="https://github.com/YanppSilva" target="_blank"><i class="fa fa-github"
+                      aria-hidden="true"></i></a></li>
+              </ul>
+            </div>
           </div>
         </div>
       </div>
+      <div class="content_sobre-mim">
+        <div class="container_sobre-mim__box">
+          <h3 class="container_sobre-mim__titulo">About Me</h3>
+          <span class="container_sobre-mim__subTitulo">Sobre Mim</span>
+          <div class="border-bottom"></div>
+        </div>
+        <div class="container_sobre-mim__texto">
+          <p class="about-me">Olá, bem vindo ao meu portifólio. Atualmente faço projetos com HTML, CSS e JavaScript.
+            Estou
+            em transição de carreira e sou apaixonado por tecnologia, penso muito em meu futuro e procuro sempre
+            aprimorar
+            minhas habilidades e conhecimentos. Na universidade e com cursos e projetos pessoais, busco sempre
+            crescimento
+            em relação a minha vida profissional e pessoal. Atualmente estou aprimorando meu JavaScript e estudando
+            React.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="skills" id="skills">
+    <div class="container__skill">
+      <div class="container_sobre-mim__skill">
+        <h3 class="container_sobre-mim__titulo-skill">Skills</h3>
+        <span class="container_sobre-mim__subTitulo-skill">Habilidades</span>
+        <div class="border-bottom-skill"></div>
+      </div>
+      <div class="container_skills">
+        <div class="box" style="--clr:#ff8c00;">
+          <div class="content">
+            <div class="icon"><i class="fa fa-html5" aria-hidden="true"></i></div>
+            <div class="texto__skills">
+              <h3>HTML</h3>
+              <p>O HTML é o componente base da web. Isso quer dizer que ele permite a construção de websites e a
+                inserção
+                de novos conteúdos, como imagens e vídeos, por meio dos hipertextos.</p>
+              <a href="https://developer.mozilla.org/pt-BR/docs/Web/HTML" target="_blank">Leia mais</a>
+            </div>
+          </div>
+        </div>
+        <div class="box" style="--clr:#0693e3;">
+          <div class="content">
+            <div class="icon">
+              <ion-icon name="logo-css3"></ion-icon></i>
+            </div>
+            <div class="texto__skills">
+              <h3>CSS</h3>
+              <p>O CSS é um mecanismo para adicionar estilos a uma página web, aplicado diretamente nas tags HTML ou
+                ficar
+                contido dentro das tags style.</p>
+              <a href="https://developer.mozilla.org/pt-BR/docs/Web/CSS" target="_blank">Leia mais</a>
+            </div>
+          </div>
+        </div>
+        <div class="box" style="--clr:#ffcc3d;">
+          <div class="content">
+            <div class="icon">
+              <ion-icon name="logo-javascript"></ion-icon>
+            </div>
+            <div class="texto__skills">
+              <h3>JavaScript</h3>
+              <p>JavaScript é uma linguagem de programação interpretada estruturada, de script em alto nível com tipagem
+                dinâmica fraca e multiparadigma.</p>
+              <a href="https://developer.mozilla.org/pt-BR/docs/Web/JavaScript" target="_blank">Leia mais</a>
+            </div>
+          </div>
+        </div>
+        <div class="box" style="--clr:#e8bc44;">
+          <div class="content">
+            <div class="icon">
+              <ion-icon name="bar-chart"></ion-icon>
+            </div>
+            <div class="texto__skills">
+              <h3>Power BI</h3>
+              <p>Microsoft Power BI é um serviço de análise de negócios e analise de dados da desenvolvedora Microsoft
+                lançado a 24 de julho de 2015.</p>
+              <a href="https://powerbi.microsoft.com/pt-br/" target="_blank">Leia mais</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="projetos" id="projetos">
+    <div class="container_sobre-mim__projetos">
+      <h3 class="container_sobre-mim__titulo-projetos">Project's</h3>
+      <span class="container_sobre-mim__subTitulo-projetos">Projetos</span>
+      <div class="border-bottom-projetos"></div>
+    </div>
+    <div class="container-projetos">
+      <div class="card__projetos" id="site01">
+        <img class="tela__projeto" src="img/tela 7dayofcode.jpg"
+          alt="imagem do projeto devchallenge sete dias de código">
+        <div class="descricao__projetos">
+          <span class="descricao__projetos-texto">Landing page proposta pelo desafio 7dayofcode com o intuito de por em
+            prática conceitos básicos de desenvolvimento web.</span>
+          <div class="desricao__projetos-tecnologias--container">
+            <span class="descricao__projetos-tecnologias">html</span>
+            <span class="descricao__projetos-tecnologias">css</span>
+            <button class="ver__site" id="btn-modal-1">Ver</button>
+          </div>
+        </div>
+      </div>
+      <div class="card__projetos" id="site02">
+        <img class="tela__projeto" src="img/tela devchallenge.jpg" alt="imagem do projeto X">
+        <div class="descricao__projetos">
+          <span class="descricao__projetos-texto">Landing page proposta pelo desafio DevChallenge com o intuito de por
+            em prática conceitos básicos de desenvolvimento web.</span>
+          <div class="desricao__projetos-tecnologias--container">
+            <span class="descricao__projetos-tecnologias">html</span>
+            <span class="descricao__projetos-tecnologias">css</span>
+            <button class="ver__site" id="btn-modal-2">Ver</button>
+          </div>
+        </div>
+      </div>
+      <div class="card__projetos" id="site03">
+        <img class="tela__projeto" src="img/tela pokedex.jpg" alt="imagem do projeto X">
+        <div class="descricao__projetos">
+          <span class="descricao__projetos-texto">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex,
+            laborum.</span>
+          <div class="desricao__projetos-tecnologias--container">
+            <span class="descricao__projetos-tecnologias">html</span>
+            <span class="descricao__projetos-tecnologias">css</span>
+            <span class="descricao__projetos-tecnologias">javascript</span>
+            <button class="ver__site" id="btn-modal-3">Ver</button>
+          </div>
+        </div>
+      </div>
+      <div class="card__projetos" id="site04">
+        <img class="tela__projeto" src="img/tela lista de viagem.jpg" alt="imagem do projeto X">
+        <div class="descricao__projetos">
+          <span class="descricao__projetos-texto">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex,
+            laborum.</span>
+          <div class="desricao__projetos-tecnologias--container">
+            <span class="descricao__projetos-tecnologias">html</span>
+            <span class="descricao__projetos-tecnologias">css</span>
+            <span class="descricao__projetos-tecnologias">javascript</span>
+            <button class="ver__site" id="btn-modal-4">Ver</button>
+          </div>
+        </div>
+      </div>
+      <div class="card__projetos" id="site05">
+        <img class="tela__projeto" src="img/tela layout-grid.jpg" alt="imagem do projeto X">
+        <div class="descricao__projetos">
+          <span class="descricao__projetos-texto">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex,
+            laborum.</span>
+          <div class="desricao__projetos-tecnologias--container">
+            <span class="descricao__projetos-tecnologias">html</span>
+            <span class="descricao__projetos-tecnologias">css</span>
+            <span class="descricao__projetos-tecnologias">javascript</span>
+            <button class="ver__site" id="btn-modal-5">Ver</button>
+          </div>
+        </div>
+      </div>
+      <div class="card__projetos" id="site06">
+        <img class="tela__projeto" src="img/tela apeperia.jpg" alt="imagem do projeto X">
+        <div class="descricao__projetos">
+          <span class="descricao__projetos-texto">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex,
+            laborum.</span>
+          <div class="desricao__projetos-tecnologias--container">
+            <span class="descricao__projetos-tecnologias">html</span>
+            <span class="descricao__projetos-tecnologias">css</span>
+            <span class="descricao__projetos-tecnologias">javascript</span>
+            <button class="ver__site" id="btn-modal-6">Ver</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <footer class="rodape container">
+    <section class="contato" id="contato">
+      <div class="contato_texto">Fale comigo!</div>
+      <div class="contato_links">
+        <ul class="social-icons">
+          <li>
+            <ion-icon class="icon__footer" name="logo-whatsapp"></ion-icon><a
+              href="https://wa.me/+5585999719800">Whatsapp</a>
+          </li>
+          <li><i class="fa fa-linkedin icon__footer" aria-hidden="true"></i><a
+              href="https://www.linkedin.com/in/yanpablo/">Linkedin</a></li>
+          <li><i class="fa fa-github icon__footer" aria-hidden="true"></i><a
+              href="https://github.com/YanppSilva">Github</a></li>
+          <li><i class="fa fa-instagram icon__footer" aria-hidden="true"></i><a
+              href="https://www.instagram.com/yan.ppsilva/">Instagram</a></li>
+        </ul>
+      </div>
+      <span class="copyright">Desenvolvivo por Yan Pablo 😎</span>
     </section>
-  </main>
-  <script src="js/mobile-navbar.js"></script>
+    <div data-scroll="suave" data-anima="scroll">
+      <a href="#topo">
+        <div class="topo">
+          <ion-icon name="home-outline"></ion-icon>
+        </div>
+      </a>
 
+    </div>
+  </footer>
+  <div id="modalID">
+    <div id="modal1" class="container-modal">
+      <div class="modal">
+        <button class="close1 fechar">x</button>
+        <div class="modal-img">
+          <img src="img/tela 7dayofcode.jpg" alt="site clicado">
+        </div>
+        <div class="modal-descricao">
+          <div class="modal-profile">
+            <img src="img/yan pablo.png" alt="modal-img-profile">
+            <span class="modal-nick">Desenvolvido por Yan Pablo</span>
+          </div>
+          <div class="modal-stacks">
+            <span class="stacks">HTML</span>
+            <span class="stacks">CSS</span>
+            <span class="stacks">JavaScript</span>
+          </div>
+          <div class="modal-text-descricao">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora, maxime itaque? Harum ut, incidunt quod
+            porro
+            fuga odio possimus doloribus.
+          </div>
+          <div class="modal-link-github">
+            <a target="_blank" href="https://github.com/YanppSilva/7DaysOfCode-OptimusTech">Veja no Github</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="modal2" class="container-modal">
+      <div class="modal">
+        <button class="close2 fechar">x</button>
+        <div class="modal-img">
+          <img src="img/tela devchallenge.jpg" alt="site clicado">
+        </div>
+        <div class="modal-descricao">
+          <div class="modal-profile">
+            <img src="img/yan pablo.png" alt="modal-img-profile">
+            <span class="modal-nick">Desenvolvido por Yan Pablo</span>
+          </div>
+          <div class="modal-stacks">
+            <span class="stacks">HTML</span>
+            <span class="stacks">CSS</span>
+            <span class="stacks">JavaScript</span>
+          </div>
+          <div class="modal-text-descricao">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora, maxime itaque? Harum ut, incidunt quod
+            porro
+            fuga odio possimus doloribus.
+          </div>
+          <div class="modal-link-github">
+            <a target="_blank" href="https://github.com/YanppSilva/land-page-dev-challenge">Veja no Github</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="modal3" class="container-modal">
+      <div class="modal">
+        <button class="close3 fechar">x</button>
+        <div class="modal-img">
+          <img src="img/tela pokedex.jpg" alt="site clicado">
+        </div>
+        <div class="modal-descricao">
+          <div class="modal-profile">
+            <img src="img/yan pablo.png" alt="modal-img-profile">
+            <span class="modal-nick">Desenvolvido por Yan Pablo</span>
+          </div>
+          <div class="modal-stacks">
+            <span class="stacks">HTML</span>
+            <span class="stacks">CSS</span>
+            <span class="stacks">JavaScript</span>
+          </div>
+          <div class="modal-text-descricao">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora, maxime itaque? Harum ut, incidunt quod
+            porro
+            fuga odio possimus doloribus.
+          </div>
+          <div class="modal-link-github">
+            <a target="_blank" href="https://github.com/YanppSilva/pokedex">Veja no Github</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="modal4" class="container-modal">
+      <div class="modal">
+        <button class="close4 fechar">x</button>
+        <div class="modal-img">
+          <img src="img/tela lista de viagem.jpg" alt="site clicado">
+        </div>
+        <div class="modal-descricao">
+          <div class="modal-profile">
+            <img src="img/yan pablo.png" alt="modal-img-profile">
+            <span class="modal-nick">Desenvolvido por Yan Pablo</span>
+          </div>
+          <div class="modal-stacks">
+            <span class="stacks">HTML</span>
+            <span class="stacks">CSS</span>
+            <span class="stacks">JavaScript</span>
+          </div>
+          <div class="modal-text-descricao">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora, maxime itaque? Harum ut, incidunt quod
+            porro
+            fuga odio possimus doloribus.
+          </div>
+          <div class="modal-link-github">
+            <a target="_blank" href="https://github.com/YanppSilva/Lista-de-Viagem">Veja no Github</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="modal5" class="container-modal">
+      <div class="modal">
+        <button class="close5 fechar">x</button>
+        <div class="modal-img">
+          <img src="img/tela layout-grid.jpg" alt="site clicado">
+        </div>
+        <div class="modal-descricao">
+          <div class="modal-profile">
+            <img src="img/yan pablo.png" alt="modal-img-profile">
+            <span class="modal-nick">Desenvolvido por Yan Pablo</span>
+          </div>
+          <div class="modal-stacks">
+            <span class="stacks">HTML</span>
+            <span class="stacks">CSS</span>
+            <span class="stacks">JavaScript</span>
+          </div>
+          <div class="modal-text-descricao">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora, maxime itaque? Harum ut, incidunt quod
+            porro
+            fuga odio possimus doloribus.
+          </div>
+          <div class="modal-link-github">
+            <a target="_blank" href="https://github.com/YanppSilva/Grid-Layouts">Veja no Github</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="modal6" class="container-modal">
+      <div class="modal">
+        <button class="close6 fechar">x</button>
+        <div class="modal-img">
+          <img src="img/tela apeperia.jpg" alt="site clicado">
+        </div>
+        <div class="modal-descricao">
+          <div class="modal-profile">
+            <img src="img/yan pablo.png" alt="modal-img-profile">
+            <span class="modal-nick">Desenvolvido por Yan Pablo</span>
+          </div>
+          <div class="modal-stacks">
+            <span class="stacks">HTML</span>
+            <span class="stacks">CSS</span>
+            <span class="stacks">JavaScript</span>
+          </div>
+          <div class="modal-text-descricao">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora, maxime itaque? Harum ut, incidunt quod
+            porro
+            fuga odio possimus doloribus.
+          </div>
+          <div class="modal-link-github">
+            <a target="_blank" href="https://github.com/YanppSilva/Apeperia">Veja no Github</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="app.js"></script>
   <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
   <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 </body>
