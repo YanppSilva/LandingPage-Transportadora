@@ -1,6 +1,6 @@
 .servicos__container {
-  background-color: var(--cinza-bg) cover;
-  height: 34vh;
+  background-color: var(--cinza-bg);
+  height: 45vh;
 }
 
 .servicos__bloco1 {
@@ -16,7 +16,7 @@
   justify-content: center;
   color: var(--laranja);
   text-transform: uppercase;
-  margin-top: 25px;
+  padding-top: 25px;
 }
 
 .servicos__cards {
@@ -61,6 +61,7 @@
   }
 
 }
+
 
 
 

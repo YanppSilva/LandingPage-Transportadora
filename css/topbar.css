@@ -1,5 +1,7 @@
 .topbar {
   background-color: var(--azul-bg);
+  width: 100vw;
+  z-index: 2000;
 }
 
 .topbar__top {

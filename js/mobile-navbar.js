@@ -40,3 +40,5 @@ const mobileNavbar = new MobileNavbar(
   ".nav__list li",
 );
 mobileNavbar.init();
+
+
