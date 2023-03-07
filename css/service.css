@@ -112,7 +112,7 @@
     cursor: pointer;
     transition: .2s;
   }
-  
+ 
   .manual-btn:not(:last-child) {
     margin-right: 40px;
   }
@@ -135,6 +135,7 @@
   #radio1:checked ~ .first {
     margin-left: 0;
     transition: .5s;
+    
   }
   
   #radio2:checked ~ .first {
@@ -142,6 +143,12 @@
     transition: .5s;
   }
   
+  #radio1:checked ~  {
+    background-color: var(--laranja);
+  }
+  #radio2:checked ~ .auto-btn2 {
+    background-color: var(--laranja);
+  }
 }
 
 @media (min-width: 426px) {
