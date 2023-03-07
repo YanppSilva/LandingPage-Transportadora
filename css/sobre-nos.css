@@ -1,0 +1,152 @@
+.sobre-nos__container {
+  height: 100vh;
+  padding: 0 25vw;
+  display:flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.sobre-nos__bloco {
+  display:flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.sobre-nos__img {
+  width: 500px;
+}
+
+.sobre-nos__img img {
+  width: 100%;
+  z-index: 2000;
+  border-radius: 5px;
+}
+
+.sobre-nos__img::before {
+  content: '';
+  display: block;
+  position: absolute;
+  background-color: transparent;
+  border-radius: 20px;
+  border: solid var(--laranja) 5px;
+  width: 800px;
+  height: 350px;
+  top: 120%;
+  left: -10%;
+  z-index: -1;
+}
+
+.sobre-nos__img::after {
+  content: '';
+  display: block;
+  position: absolute;
+  background-color: transparent;
+  border-radius: 20px;
+  border: solid var(--azul-bg) 5px;
+  width: 800px;
+  height: 350px;
+  top: 115%;
+  left: -12%;
+  z-index: -1;
+}
+
+.sobre-nos__titulo {
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-size: 1.5em;
+}
+
+.sobre-nos__bloco .sobre-nos__box {
+  width: 20vw;
+}
+
+.sobre-nos__titulo::after {
+  content:'';
+  
+  display: block;
+  width: 140px;
+  border-bottom: solid var(--laranja) 3px;
+  margin-bottom: 25px;
+}
+
+@media (max-width: 1024px) {
+  .sobre-nos__container {
+    padding: 0 5vw;
+  }
+
+  .sobre-nos__img {
+    width: 50%;
+  }
+
+  .sobre-nos__bloco .sobre-nos__box {
+    width: 45%;
+  }
+
+  .sobre-nos__img::before {
+    top: 120%;
+    left: -60%;
+  }
+  
+  .sobre-nos__img::after {
+    top: 115%;
+    left: -65%;
+  }
+
+  .sobre-nos__titulo {
+    font-size: 1.7em;
+  }
+
+  .sobre-nos__box-text {
+    font-size: 1.2em;
+  }
+}
+
+@media (max-width: 768px) {
+  .sobre-nos__container {
+    padding: 0 5vw;
+  }
+
+  .sobre-nos__img {
+    width: 50%;
+  }
+
+  .sobre-nos__bloco .sobre-nos__box {
+    width: 45%;
+  }
+
+  .sobre-nos__img::before {
+    top: 120%;
+    left: -85%;
+  }
+  
+  .sobre-nos__img::after {
+    top: 115%;
+    left: -90%;
+  }
+}
+
+@media (max-width: 768px) {
+  .sobre-nos__container {
+    padding: 0 5vw;
+  }
+
+  .sobre-nos__img {
+    width: 50%;
+  }
+
+  .sobre-nos__bloco .sobre-nos__box {
+    width: 45%;
+  }
+
+  .sobre-nos__img::before {
+    top: 120%;
+    left: -85%;
+  }
+  
+  .sobre-nos__img::after {
+    top: 115%;
+    left: -90%;
+  }
+}
+
