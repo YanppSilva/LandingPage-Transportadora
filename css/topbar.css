@@ -194,4 +194,8 @@ a:hover {
   }
 }
 
-@media (max-width: 375px) {}
+@media (max-width: 375px) {
+  .topbar__btn a {
+    font-size: .7em;
+}
+}

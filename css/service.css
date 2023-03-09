@@ -104,7 +104,7 @@
 
 @media (max-width: 425px) {
   .slider {
-    width: 61%;    
+    width: 56%;    
   }
   
   .slides {
@@ -115,7 +115,7 @@
   .manual-nav {
     position: absolute;
     margin-top: 0;
-    width: 55%;
+    width: 56%;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -184,5 +184,15 @@
     width: 100%;
     margin-top: 20px;
     font-size: 1.2em;
+  }
+}
+
+@media (width: 375px) {
+  .slider {
+    width: 69%;    
+  }
+
+  .manual-nav {
+    width: 69%;
   }
 }
