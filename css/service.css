@@ -196,3 +196,13 @@
     width: 69%;
   }
 }
+
+@media (width: 320px) {
+  .slider {
+    width: 80%;    
+  }
+
+  .manual-nav {
+    width: 80%;
+  }
+}

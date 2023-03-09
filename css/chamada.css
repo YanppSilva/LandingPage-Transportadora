@@ -55,7 +55,7 @@
   }
 }
 
-@media (max-width: 1024px) {
+@media screen and (max-width: 1024px) {
   .chamada__bloco1 h2 {
     font-size: 3em;
   }
@@ -68,12 +68,27 @@
   }
 }
 
-@media (max-width: 425px) {
+@media screen and (max-width: 425px) {
   .chamada__bloco1 {
     width: 300px;
   }
 
   .chamada__bloco1 h2 {
     font-size: 2em;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .chamada__btn {
+    height: 35px;
+    font-size: 1em;
+    padding: 5px 10px;
+    margin: 15% auto 0;
+  } 
+}
+
+@media screen and (max-width: 320px) {
+  .chamada__btn a {
+    font-size: .7em;
   }
 }

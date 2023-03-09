@@ -63,9 +63,8 @@
 
 .sobre-nos__titulo::after {
   content:'';
-  
   display: block;
-  width: 140px;
+  width: 160px;
   border-bottom: solid var(--laranja) 3px;
   margin-bottom: 25px;
 }
@@ -99,6 +98,7 @@
 
   .sobre-nos__box-text {
     font-size: 1.2em;
+    margin-top: 25px;
   }
 }
 
@@ -150,11 +150,7 @@
   }
 
   .sobre-nos__titulo::after {
-    content: '';
-    display: block;
-    width: 100%;
-    border-bottom: solid var(--laranja) 3px;
-    margin-bottom: 25px;
+    margin: 0 auto;
   }
 
   .sobre-nos__img::before {
@@ -172,16 +168,37 @@
 
 @media (max-width: 375px) {
   .sobre-nos__img::before {
-    top: 105%;
-    left: -190%;
+    width: 160px;
+    height: 150px;
+    top: 104%;
+    left: -22%;
     height: 175px;
   }
   
   .sobre-nos__img::after {
-    top: 116%;
+    width: 160px;
+    height: 150px;
+    top: 117%;
     left: 78%;
     height: 175px;
   }
+}
+
+@media screen and (max-width: 320px) {
+  .sobre-nos__img::before {
+    width: 160px;
+    height: 150px;
+    top: 103%;
+    left: -28%;
+  }
+  
+  .sobre-nos__img::after {
+    width: 160px;
+    height: 150px;
+    top: 116%;
+    left: 78%;
+  }
+  
 }
 
 
