@@ -58,14 +58,13 @@
 @media (max-width: 1024px) {
   .chamada__bloco1 h2 {
     font-size: 3em;
-    margin-top: 85px;
   }
 
   .chamada__btn {
     height: 45px;
     font-size: 1.3em;
     padding: 5px 15px;
-    margin: 15% auto;
+    margin: 5% auto 0;
   }
 }
 
