@@ -5,14 +5,14 @@
 
 .slider {
   margin: 0 auto;
-  margin-top: 10px;
+  margin-top: 50px;
   width: 80%;
   height: 340px;
 }
 
 .slides {
   width: 100%;
-  height: 500px;
+  height: 250px;
   display: flex;
   align-items: center;
 }
@@ -40,7 +40,7 @@
 }
 
 .servicos__icones {
-  width: 200px;
+  width: 140px;
 }
 
 .servicos__cards {
@@ -60,9 +60,25 @@
 
 .servicos__card-text {
   width: 60%;
+  height: 70px;
   text-align: center;
   margin-top: 15px;
   font-size: 1.5em;
+}
+
+@media (max-width: 1024px) {
+  .slider {
+    width: 90%;
+  }
+
+  .slide:not(:last-child) {
+    margin-right: 35px;
+  }
+
+  .servicos__card-text {
+    font-size: 1.3em;
+    margin-top: 40px;
+  }
 }
 
 @media (max-width: 768px) {
@@ -88,7 +104,7 @@
 
 @media (max-width: 425px) {
   .slider {
-    width: 55%;    
+    width: 61%;    
   }
   
   .slides {
@@ -99,7 +115,7 @@
   .manual-nav {
     position: absolute;
     margin-top: 0;
-    width: 50%;
+    width: 55%;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -128,7 +144,6 @@
   .servicos__card-text {
     height: 100px;
     width: 100px;
-    text-align: center;
     font-size: .8em;
   } 
   
@@ -168,8 +183,6 @@
   .servicos__card-text {
     width: 100%;
     margin-top: 20px;
+    font-size: 1.2em;
   }
 }
-
-
-

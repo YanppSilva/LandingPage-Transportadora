@@ -31,7 +31,7 @@
   border-radius: 8px;
   border: none;
   padding: 5px 15px;
-  margin-top: 90px;
+  margin: 15% auto;
 }
 
 .chamada__btn a{
@@ -52,6 +52,20 @@
   }
   100% {
     transform: scale(1);
+  }
+}
+
+@media (max-width: 1024px) {
+  .chamada__bloco1 h2 {
+    font-size: 3em;
+    margin-top: 85px;
+  }
+
+  .chamada__btn {
+    height: 45px;
+    font-size: 1.3em;
+    padding: 5px 15px;
+    margin: 15% auto;
   }
 }
 

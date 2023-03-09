@@ -37,9 +37,11 @@
   0% {
     transform: scale(1);
   }
+
   50% {
     transform: scale(1.2);
   }
+
   100% {
     transform: scale(1);
   }
@@ -57,7 +59,7 @@ ion-icon {
 
 .topbar__navbar {
   display: flex;
-  justify-content:space-around;
+  justify-content: space-around;
   align-items: center;
   height: 8vh;
 }
@@ -68,15 +70,15 @@ ion-icon {
 }
 
 .nav__list li {
-letter-spacing: 2px;
-margin-left: 30px;
+  letter-spacing: 2px;
+  margin-left: 30px;
 }
 
 .nav__list li a {
- color: var(--branco);
- text-decoration: none;
- transform: 0.3s;
- font-size: 1em;
+  color: var(--branco);
+  text-decoration: none;
+  transform: 0.3s;
+  font-size: 1em;
 }
 
 a:hover {
@@ -86,8 +88,8 @@ a:hover {
 .mobile__menu {
   display: none;
   cursor: pointer;
-  background-color: rgba(255,101,3, 0.9);
-  border-radius: 3px;
+  background-color: rgba(255, 101, 3, 0.9);
+  border-radius: 6px;
   height: 40px;
 }
 
@@ -108,6 +110,7 @@ a:hover {
     opacity: 0;
     transform: translateX(50px);
   }
+
   to {
     opacity: 1;
     transform: translateX(0);
@@ -117,17 +120,35 @@ a:hover {
 .mobile__menu.active .line1 {
   transform: rotate(-45deg) translate(-8px, 8px);
 }
+
 .mobile__menu.active .line2 {
   opacity: 0;
 }
+
 .mobile__menu.active .line3 {
   transform: rotate(45deg) translate(-5px, -7px);
+}
+
+@media (max-width: 1024px) {
+  .nav__list {
+    font-size: 1.3em;
+  }
+
+  .topbar__btn {
+    height: 45px;
+    font-size: 1.3em;
+  }
+
+  .topbar__btn a {
+    gap: 5px;
+  }
 }
 
 @media (max-width: 425px) {
   body {
     overflow-x: hidden;
   }
+
   .nav__list {
     position: absolute;
     top: 8vh;
@@ -141,21 +162,36 @@ a:hover {
     transform: translateX(100%);
     transition: transform 0.2s ease-in;
   }
-  
+
   .nav__list li {
     margin-left: 0;
     opacity: 0;
   }
-
-  .mobile__menu {
-    display: block;
-  }
-
-  .topbar__btn {
-    margin: 10px 10px 10px 0;
-  }
-
+  
   .nav__list li a {
     font-size: .9em;
-   }
+  }
+  
+  .topbar__navbar img {
+    height: 60%;
+  }
+  
+  .topbar__btn {
+    height: 35px;
+    margin: 10px 10px 10px 10px;
+    padding: 5px 10px;
+  }
+  
+  .mobile__menu {
+    display: block;
+    height: 35px;
+  }
+
+  .mobile__menu div {
+    width: 25px;
+    height: 2px;
+    margin: 7px;
+  }
 }
+
+@media (max-width: 375px) {}
