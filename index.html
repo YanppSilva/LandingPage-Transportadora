@@ -17,43 +17,49 @@
 
 <body>
   <header class="topbar">
-    <nav class="topbar__navbar">
-      <img src="assets/logo-horizontal.png" alt="Logo RV Cargas">
-      <ul class="nav__list">
-        <li><a href="#">Sobre</a></li>
-        <li><a href="#">Contato</a></li>
-        <li><a href="#">Rastreamento</a></li>
-      </ul>
-      <section class="topbar__top">
-        <button class="topbar__btn"><a href="https://whats.link/rvcargaslog" class="topbar__btn-link" target="_blank"><ion-icon name="logo-whatsapp"></ion-icon>Faça sua cotação</a></button>
-      </section>
-      <div class="mobile__menu">
-        <div class="line1"></div>
-        <div class="line2"></div>
-        <div class="line3"></div>
-      </div>
-    </nav>
+    <div class="topbar__container">
+      <nav class="topbar__navbar">
+        <div class="topbar__navbar-img">
+          <img src="assets/logo-horizontal.png" alt="Logo RV Cargas">
+        </div>
+        <ul class="nav__list">
+          <li><a href="#">Sobre</a></li>
+          <li><a href="#">Contato</a></li>
+          <li><a href="#">Rastreamento</a></li>
+        </ul>
+        <section class="topbar__top">
+          <button class="topbar__btn">
+            <ion-icon name="logo-whatsapp" class="ion-icon"></ion-icon>
+            <a href="https://whats.link/rvcargaslog" class="topbar__btn-link" target="_blank">Faça sua cotação</a>
+          </button>
+        </section>
+        <div class="mobile__menu">
+          <div class="line1"></div>
+          <div class="line2"></div>
+          <div class="line3"></div>
+        </div>
+      </nav>
     </div>
   </header>
   <main>
     <section class="chamada__container">
       <div class="chamada__bloco1">
         <h2 class="chamada__titulo">Transportando com eficiência e agilidade para todo o Brasil!</h2>
-        <button class="chamada__btn"><a href="https://www.instagram.com/rvcargaslogistica/" target="_blank">veja mais</a></button>
+        <button class="chamada__btn"><a href="https://www.instagram.com/rvcargaslogistica/" target="_blank">veja
+            mais</a></button>
       </div>
     </section>
     <section class="servicos__container">
       <h3 class="servicos__titulo">por que escolher a rv cargas</h3>
       <div class="slider">
         <div class="slides">
-          <input type="radio" name="radio-btn" id="radio1">
-          <input type="radio" name="radio-btn" id="radio2">
-          <div class="slide first">
+          <div class="slide">
             <img src="assets/icons/logistics128.png" alt="Icone de serviços internacionais" class="servicos__icones">
             <span class="servicos__card-text">Serviços de Logística nacional e internacional</span>
           </div>
           <div class="slide">
-            <img src="assets/icons/logistics-delivery128.png" alt="Icone de serviços de logística aéreos e rodoviários" class="servicos__icones">
+            <img src="assets/icons/logistics-delivery128.png" alt="Icone de serviços de logística aéreos e rodoviários"
+              class="servicos__icones">
             <span class="servicos__card-text">transporte Aéreo e Rodoviário para todo o Brasil</span>
           </div>
           <div class="slide">
@@ -64,18 +70,10 @@
             <img src="assets/icons/inventory128.png" alt="Icone de serviços internacionais" class="servicos__icones">
             <span class="servicos__card-text">Serviços de Armazenamento de Cargas</span>
           </div>
-          <div class="nav-auto">
-            <div class="auto-btn1"></div>
-            <div class="auto-btn2"></div>
-          </div>
-        </div>
-        <div class="manual-nav">
-          <label for="radio1" class="manual-btn"></label>
-          <label for="radio2" class="manual-btn"></label>
         </div>
       </div>
     </section>
-    <section class="sobre-nos__container">
+    <section class="sobre-nos__container sobre-nos__classe">
       <div class="sobre-nos__bloco">
         <div class="sobre-nos__img">
           <img src="assets/img-sobrenos.jpg" alt="Imagem sobre a RV Cargas">
@@ -83,7 +81,9 @@
         <div class="sobre-nos__box">
           <h3 class="sobre-nos__titulo">Sobre Nós</h3>
           <p class="sobre-nos__box-text">
-            Nascemos em 2015 como empresa que busca soluções específicas para o mercado de logística. Investindo constantemente em infraestrutura, pessoas, profissionalização de processos para um melhor antendimento aos nosso clientes e parceiros.
+            Nascemos em 2015 como empresa que busca soluções específicas para o mercado de logística. Investindo
+            constantemente em infraestrutura, pessoas, profissionalização de processos para um melhor antendimento aos
+            nosso clientes e parceiros.
           </p>
         </div>
       </div>
@@ -91,31 +91,36 @@
     <section class="produtos__container">
       <div class="produtos__bloco">
         <h3 class="produtos__titulo">Produtos</h3>
-        <div class="produtos">
-          <h3 class="produto__titulo">RV Convencional</h3>
-          <p class="produto__descricao">Serviço de Tranporte aéreo com preços competitivos e sua carga aguarda disponibilidade de espaço nos voos para embarque</p>
-        </div>
-        <div class="produtos">
-          <h3 class="produto__titulo">RV Rodoviário</h3>
-          <p class="produto__descricao">Serviços de logística e transporte Rodoviário para todo o Brasil, com especial ênfase para todo interior do Ceará</p>
-        </div>
-        <div class="produtos">
-          <h3 class="produto__titulo">RV Próximo Voo</h3>
-          <p class="produto__descricao">Serviço de Tranporte aéreo voo e prazo de entrega definido. Ideal para quem precisa de atendimento imediato</p>
-        </div>
-        <div class="produtos">
-          <h3 class="produto__titulo">RV Internacional</h3>
-          <p class="produto__descricao">Serviço de logística e transporte de cargas aéreas internacionais</p>
-        </div>
-        <div class="produtos">
-          <h3 class="produto__titulo">RV Entrega com Portador</h3>
-          <p class="produto__descricao">Serviços personalizado de logística onde sua carga será entregue no destino final, em mãos, por nossos colaboradores.</p>
+        <div class="produtos__box">
+          <div class="produtos">
+            <h3 class="produto__titulo">RV Convencional</h3>
+            <p class="produto__descricao">Serviço de Tranporte aéreo com preços competitivos e sua carga aguarda
+              disponibilidade de espaço nos voos para embarque</p>
+          </div>
+          <div class="produtos">
+            <h3 class="produto__titulo">RV Rodoviário</h3>
+            <p class="produto__descricao">Serviços de logística e transporte Rodoviário para todo o Brasil, com especial
+              ênfase para todo interior do Ceará</p>
+          </div>
+          <div class="produtos">
+            <h3 class="produto__titulo">RV Próximo Voo</h3>
+            <p class="produto__descricao">Serviço de Tranporte aéreo voo e prazo de entrega definido. Ideal para quem
+              precisa de atendimento imediato</p>
+          </div>
+          <div class="produtos">
+            <h3 class="produto__titulo">RV Internacional</h3>
+            <p class="produto__descricao">Serviço de logística e transporte de cargas aéreas internacionais</p>
+          </div>
+          <div class="produtos">
+            <h3 class="produto__titulo">RV Entrega com Portador</h3>
+            <p class="produto__descricao">Serviços personalizado de logística onde sua carga será entregue no destino
+              final, em mãos, por nossos colaboradores.</p>
+          </div>
         </div>
       </div>
     </section>
   </main>
   <script src="js/mobile-navbar.js"></script>
-  <script src="js/slider.js"></script>
 
   <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
   <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>

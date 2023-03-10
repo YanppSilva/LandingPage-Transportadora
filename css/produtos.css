@@ -1,29 +1,35 @@
 .produtos__container {
   background-color: var(--azul-bg);
-  height: 46vh;
   display: flex;
   align-items: center;
   justify-content: center;
   position: relative;
+  padding: 0 15px;
 }
 
 .produtos__bloco {
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
+  padding: 100px 0;
+  max-width: 1440px;
+}
+
+.produtos__box {
+  display: flex;
 }
 
 .produtos__titulo {
   color: #fff;
   font-size: 1.5em;
   letter-spacing: 1px;
-  position: absolute;
   text-transform: uppercase;
   top: 30px;
 }
 
 .produtos__titulo::after {
-  content:'';  
+  content: '';
   display: block;
   width: 140px;
   border-bottom: solid var(--laranja) 3px;
@@ -33,12 +39,13 @@
 .produtos {
   border: 3px solid var(--laranja);
   border-radius: 40px;
-  height: 170px;
-  width: 300px;
+  height: 100%;
+  min-height: 180px;
+  margin: 0 auto;
+  width: 100%;
   padding: 10px;
   color: #fff;
   cursor: pointer;
-  
   transition: .4s;
 }
 
@@ -55,51 +62,42 @@
 
 .produtos .produto__descricao {
   text-align: center;
-  font-size: 1em;
+  font-size: 1rem;
+  line-height: 19px;
   padding-top: 15px
 }
 
-@media screen and (min-width: 769px) {
+@media screen and (min-width: 1025px) {
   .produtos:not(:last-child) {
     margin-right: 50px;
   }
 }
 
 @media screen and (max-width: 1024px) {
-  .produtos__container {
-    height: 92vh;
-  }
-  
-  .produtos__bloco {
-    flex-wrap: wrap;
+  .produtos__box {
+    flex-direction: column;
+    padding-top: 50px;
   }
 
   .produtos {
-    margin: 20px 20px;
+    width: 80%;
+    margin-bottom: 30px;
   }
 }
 
-@media screen and (max-width: 768px) {
-  
-  .produtos__bloco {
-    flex-wrap: wrap;
-    margin-top: 30px;
-  }
-
-  .produtos {
-    margin: 20px auto;
-  }
-}
+@media screen and (max-width: 768px) {}
 
 @media screen and (max-width: 475px) {
-  .produtos__container {
-    height: 150vh;
+  .produtos .produto__titulo {
+    font-size: 1.2rem;
   }
 
-  .produtos:not(:last-child) {
-    margin-bottom: 45px;
+  .produtos .produto__descricao {
+    text-align: center;
+    font-size: .9rem;
+    line-height: 17px;
+    padding-top: 15px;
   }
 }
 
-@media screen and (max-width: 375px) {
-}
+@media screen and (max-width: 375px) {}

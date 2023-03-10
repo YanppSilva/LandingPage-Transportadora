@@ -1,29 +1,30 @@
 .sobre-nos__container {
-  height: 100vh;
-  padding: 0 25vw;
-  display:flex;
+  display: flex;
   align-items: center;
   justify-content: space-between;
+  padding: 0 15px;
+  position: relative;
+  max-width: 1440px;
+  margin: 0 auto;
 }
 
 .sobre-nos__bloco {
-  display:flex;
+  display: flex;
   align-items: center;
-  justify-content: space-between;
-  width: 100%;
+  justify-content: space-evenly;
+  padding: 200px 0;
 }
 
 .sobre-nos__img {
-  width: 500px;
+  width: 40%;
 }
 
 .sobre-nos__img img {
   width: 100%;
-  z-index: 2000;
   border-radius: 5px;
 }
 
-.sobre-nos__img::before {
+.sobre-nos__classe::before {
   content: '';
   display: block;
   position: absolute;
@@ -32,12 +33,12 @@
   border: solid var(--laranja) 5px;
   width: 800px;
   height: 350px;
-  top: 120%;
-  left: -10%;
+  top: 100px;
+  left: -530px;
   z-index: -1;
 }
 
-.sobre-nos__img::after {
+.sobre-nos__classe::after {
   content: '';
   display: block;
   position: absolute;
@@ -46,8 +47,8 @@
   border: solid var(--azul-bg) 5px;
   width: 800px;
   height: 350px;
-  top: 115%;
-  left: -12%;
+  top: 90px;
+  left: -540px;
   z-index: -1;
 }
 
@@ -57,148 +58,130 @@
   font-size: 1.5em;
 }
 
-.sobre-nos__bloco .sobre-nos__box {
-  width: 20vw;
-}
-
 .sobre-nos__titulo::after {
-  content:'';
+  content: '';
   display: block;
   width: 160px;
   border-bottom: solid var(--laranja) 3px;
   margin-bottom: 25px;
 }
 
-@media (max-width: 1024px) {
-  .sobre-nos__container {
-    padding: 0 5vw;
+.sobre-nos__box {
+  width: 50%;
+}
+
+.sobre-nos__box p {
+  width: 100%;
+}
+
+
+@media screen and (max-width: 1200px) {
+  .sobre-nos__classe::before {
+    width: 300px;
+    height: 250px;
+    top: 100px;
+    left: -140px;
   }
 
-  .sobre-nos__img {
-    width: 50%;
-  }
-
-  .sobre-nos__bloco .sobre-nos__box {
-    width: 45%;
-  }
-
-  .sobre-nos__img::before {
-    top: 120%;
-    left: -60%;
-  }
-  
-  .sobre-nos__img::after {
-    top: 115%;
-    left: -65%;
+  .sobre-nos__classe::after {
+    width: 300px;
+    height: 250px;
+    top: 90px;
+    left: -150px;
   }
 
   .sobre-nos__titulo {
-    font-size: 1.7em;
+    font-size: 1.5rem;
   }
 
   .sobre-nos__box-text {
-    font-size: 1.2em;
-    margin-top: 25px;
+    font-size: 1rem;
+  }
+
+  .sobre-nos__box {
+    width: 40%;
   }
 }
 
-@media (max-width: 768px) {
-  .sobre-nos__container {
-    padding: 0 5vw;
-  }
-
+@media screen and (max-width: 800px) {
   .sobre-nos__img {
-    width: 50%;
-  }
-
-  .sobre-nos__bloco .sobre-nos__box {
-    width: 45%;
-  }
-
-  .sobre-nos__img::before {
-    top: 120%;
-    left: -85%;
-  }
-  
-  .sobre-nos__img::after {
-    top: 115%;
-    left: -90%;
-  }
-}
-
-@media (max-width: 425px) {
-  .sobre-nos__container {
-    height: 93vh;
+    width: 80%;
   }
 
   .sobre-nos__bloco {
     flex-direction: column;
+    padding: 100px 0;
   }
 
-  .sobre-nos__img {
-    width: 100%;
-  }
-
-  .sobre-nos__img img {
-    width: 100%;
-    margin-bottom: 90px;
-  }
-
-  .sobre-nos__bloco .sobre-nos__box {
-    width: 80%;
+  .sobre-nos__box {
     text-align: center;
+    width: 90%;
+  }
+
+  .sobre-nos__box p {
+    padding: 20px 10px 0;
   }
 
   .sobre-nos__titulo::after {
     margin: 0 auto;
   }
 
-  .sobre-nos__img::before {
-    top: 105%;
-    left: -165%;
-    height: 175px;
+  .sobre-nos__classe::before {
+    top: 50px;
+    left: -90px;
   }
-  
-  .sobre-nos__img::after {
-    top: 120%;
-    left: 78%;
-    height: 175px;
+
+  .sobre-nos__classe::after {
+    top: 40px;
+    left: -100px;
   }
 }
 
-@media (max-width: 375px) {
-  .sobre-nos__img::before {
-    width: 160px;
-    height: 150px;
-    top: 104%;
-    left: -22%;
-    height: 175px;
+@media screen and (max-width: 492px) {
+  .sobre-nos__classe::before {
+    top: 40px;
+    left: -150px;
   }
-  
-  .sobre-nos__img::after {
-    width: 160px;
-    height: 150px;
-    top: 117%;
-    left: 78%;
-    height: 175px;
+
+  .sobre-nos__classe::after {
+    top: 30px;
+    left: -160px;
+  }
+
+  .sobre-nos__box-text {
+    font-size: .9rem;
   }
 }
 
-@media screen and (max-width: 320px) {
-  .sobre-nos__img::before {
+@media screen and (max-width: 450px) {
+  .sobre-nos__classe::before {
     width: 160px;
     height: 150px;
-    top: 103%;
-    left: -28%;
+    top: 60px;
+    left: -40px;
   }
   
-  .sobre-nos__img::after {
+  .sobre-nos__classe::after {
     width: 160px;
     height: 150px;
-    top: 116%;
-    left: 78%;
+    top: 50px;
+    left: -50px;
+  }
+}
+
+@media screen and (max-width: 300px) {
+  .sobre-nos__classe::before {
+    width: 160px;
+    height: 150px;
+    top: 60px;
+    left: -40px;
+  }
+  
+  .sobre-nos__classe::after {
+    width: 160px;
+    height: 150px;
+    top: 50px;
+    left: -50px;
   }
   
 }
-
-
