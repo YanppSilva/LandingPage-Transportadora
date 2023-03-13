@@ -1,5 +1,5 @@
 .produtos__container {
-  background-color: var(--azul-bg);
+  background-color: var(--cinza-bg);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -21,7 +21,7 @@
 }
 
 .produtos__titulo {
-  color: #fff;
+  /* color: #fff; */
   font-size: 1.5em;
   letter-spacing: 1px;
   text-transform: uppercase;
@@ -44,7 +44,7 @@
   margin: 0 auto;
   width: 100%;
   padding: 10px;
-  color: #fff;
+  /* color: #fff; */
   cursor: pointer;
   transition: .4s;
 }
