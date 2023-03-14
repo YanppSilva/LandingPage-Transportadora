@@ -11,7 +11,8 @@
 .slides {
   display: flex;
   align-items: center;
-  height: 250px;
+  padding-top: 50px;
+  height: 300px;
   width: 100%;
 }
 

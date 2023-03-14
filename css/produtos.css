@@ -73,7 +73,7 @@
   }
 }
 
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 1024px) { 
   .produtos__box {
     flex-direction: column;
     padding-top: 50px;
@@ -82,6 +82,11 @@
   .produtos {
     width: 80%;
     margin-bottom: 30px;
+  }
+  
+  .produtos .produto__descricao {
+    height: 100px;
+    padding-top: 40px;
   }
 }
 
@@ -96,7 +101,7 @@
     text-align: center;
     font-size: .9rem;
     line-height: 17px;
-    padding-top: 15px;
+    padding-top: 10px;
   }
 }
 
